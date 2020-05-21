@@ -1,0 +1,91 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>CFH: Latitude</title>
+            <style>
+                ul { 
+                  list-style-type: none;
+                  margin: 0;
+                  padding-bottom: 200;
+                  overflow: hidden;
+                  background-color: white;
+                  font:15px "Arial",san-serif;
+                }
+                li {
+                  float: right;
+                }
+
+                li a {
+                  display: block;
+                  color: black;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                }
+                li a:hover:not(.active) {
+                    background-color: silver;
+                }
+                .active {
+                background-color: turquoise;
+                color: white;
+                font-size: 150%;
+                }
+                /* Dropdown Button */
+                .dropbtn {
+                background-color: white;
+                color: black;
+                padding: 14px 16px;
+                font-size: 16px;
+                border: none;
+                }
+                .dropdown {
+                position: relative;
+                display: inline-block;
+                }
+                .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                }
+                .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                }
+                /* Change color of dropdown links on hover */
+                .dropdown-content a:hover {background-color: silver;}
+
+                /* Show the dropdown menu on hover */
+                .dropdown:hover .dropdown-content {display: block;}
+
+                /* Change the background color of the dropdown button when the dropdown content is shown */
+                .dropdown:hover .dropbtn {background-color: silver;}
+           
+                </style>
+        </head>
+        <body>
+            <ul>
+                <ul>
+                    <li><a href="data.html">Data</a></li>
+                    <li><a href="comp.html">Comparison</a></li>
+                    <li><div class="dropdown">
+                        <button class="dropbtn">Plots</button>
+                        <div class="dropdown-content">
+                          <a href="temp.html">Max Temperature</a>
+                          <a href="humidity.html">Humidity</a>
+                          <a href="cloudiness.html">Cloudiness</a>
+                          <a href="windspeed.html">Wind Speed</a>
+                        </div></div>
+                    </li>
+                    <li style="float:left"   style="font-size: 40px"><a class="active" href="index.html">Latitude</a></li>
+                  </ul>
+        <img src="resources/assets/images/Fig1.png" alt="City Latitiude">
+        <img src="resources/assets/images/Fig2.png" alt="City Latitiude">
+        <img src="resources/assets/images/Fig3.png" alt="City Latitiude">
+        <img src="resources/assets/images/Fig4.png" alt="City Latitiude">
+    </body>
+    </html>
